@@ -23,7 +23,7 @@ const ressources = defineCollection({
     z.object({
       title: z.string(),
       url: z.url(),
-      category: z.enum(["article", "vidéo", "outil", "gif,"]),
+      type: z.enum(["article", "vidéo", "outil"]),
     }),
 });
 

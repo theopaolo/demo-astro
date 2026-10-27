@@ -5,7 +5,7 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 type Props = CollectionEntry<"ressources">["data"];
 
-const { title, description, category, url } = Astro.props;
+const { title, description, type, url } = Astro.props;
 ---
 
 <html lang="fr">
@@ -87,7 +87,7 @@ const { title, description, category, url } = Astro.props;
             <hr />
           </div>
           <div class="meta">
-            <span class="type">{category}</span>
+            <span class="type">{type}</span>
             <a class="url" href={url} target="_blank" rel="noopener noreferrer">
               Visiter la ressource
             </a>
